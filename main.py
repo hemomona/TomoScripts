@@ -50,8 +50,8 @@ def main():
     parser.add_argument('--start', type=int, help='start number of process')
     parser.add_argument('--end', type=int, help='end number (also to be processed) of process')
 
-    parser.add_argument('--dose_file', type=str, help='log file name', default='dose_per_view.txt')
-    parser.add_argument('--ctf_file', type=str, help='log file name', default='average_defocus.txt')
+    parser.add_argument('--dose_file', type=str, help='file name to save prior and current dose per view', default='dose_per_view.txt')
+    parser.add_argument('--ctf_file', type=str, help='file name to save average defocus per stack', default='average_defocus.txt')
     parser.add_argument('--pixel_size', type=float, help='in Angstrom')
 
     parser.add_argument('--particle_ID', type=int, help='particle ID in deepetpicker coordinate')

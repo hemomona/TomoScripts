@@ -23,7 +23,7 @@ def generate_tomo_and_coord_star_file(filedir, prefix, suffix, particle_ID, bin_
                 "\n_rlnTomoImportImodDir\n_rlnTomoImportOrderList\n")
         for ts in files:
             ts_name = ts.split(suffix)[0]
-            f.write(f"{ts_name}\t{prefix}{ts_name}/{ts_name}.mrc\t{prefix}{ts_name}/diagnostic_output.txt\t{ts_name}\t{order_list}\n")
+            f.write(f"{ts_name}\t{prefix}{ts_name}/{ts_name}.mrc\t{prefix}{ts_name}/diagnostic_output.txt\t{prefix}{ts_name}\t{order_list}\n")
     print(f"written {tomo_star}")
 
     formatted_particles = []
